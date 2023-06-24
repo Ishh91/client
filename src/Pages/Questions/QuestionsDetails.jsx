@@ -17,7 +17,7 @@ const QuestionsDetails = () => {
     const User = useSelector((state) => state.currentUserReducer);
     const questionsList = useSelector((state) => state.questionReducer);
     const location = useLocation();
-    const url = "https://stack-overflow-o.onrender.com";
+    const url = "https://stack-overflow-clone-s.netlify.app/Questions/6495af68f5e3cd974bf5f408";
     const handleUpVote = () => {
         dispatch(voteQuestion(id, "upVote", User.result._id))
     };
