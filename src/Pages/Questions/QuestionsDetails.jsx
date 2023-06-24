@@ -17,7 +17,7 @@ const QuestionsDetails = () => {
     const User = useSelector((state) => state.currentUserReducer);
     const questionsList = useSelector((state) => state.questionReducer);
     const location = useLocation();
-    const url = "http://localhost:3000";
+    const url = "https://stack-overflow-o.onrender.com";
     const handleUpVote = () => {
         dispatch(voteQuestion(id, "upVote", User.result._id))
     };
